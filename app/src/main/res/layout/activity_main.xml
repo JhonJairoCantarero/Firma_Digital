@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:sign="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Firma Digital"
+        android:textSize="24sp" />
+
+
+    <LinearLayout
+        android:id="@+id/signLayout"
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="27dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical" />
+
+    <EditText
+        android:id="@+id/nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileIv"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Ingresa Tu Nombre"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpiar" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Firma" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="395dp"
+        android:layout_height="59dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="187dp"
+        android:text="Guardar En SQLite" />
+
+
+</LinearLayout>

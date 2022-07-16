@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/colorBlack"
+    tools:context=".ListadoActivity">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="689dp"
+        android:layout_margin="10dp"
+        android:scrollbarDefaultDelayBeforeFade="200"
+        android:scrollbarFadeDuration="100" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/main_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="32dp"
+        android:clickable="true"
+        app:backgroundTint="#FAF7F7"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+

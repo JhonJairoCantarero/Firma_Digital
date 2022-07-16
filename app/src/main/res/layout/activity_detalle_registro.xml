@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CEE2C8"
+    android:padding="10dp"
+    tools:context=".DetalleRegistroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Imagen del usuario de perfil-->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <!-- tabla de otros datos -->
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="2">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/bioTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="10dp"
+                    android:text="La informacion bio del usuario"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    tools:ignore="RtlCompat" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Nombre"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/nameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Nombre del Usuario"
+                    android:textColor="@color/colorBlack" />
+
+            </TableRow>
+
+            <TableRow />
+
+            <TableRow />
+
+            <TableRow />
+
+            <TableRow android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Fecha de Registro"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/addedTimeTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Registro del Usuario fecha y hora"
+                    android:textColor="@color/colorBlack" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Fecha Actualizacion"
+                    android:textColor="@color/colorBlack"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/updateTimeTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Registro fecha y hora de actualización"
+                    android:textColor="@color/colorBlack"
+                    android:visibility="invisible" />
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>
